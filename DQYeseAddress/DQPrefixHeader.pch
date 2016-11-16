@@ -1,0 +1,23 @@
+//
+//  DQPrefixHeader.pch
+//  DQYeseAddress
+//
+//  Created by DQ on 16/11/15.
+//  Copyright © 2016年 GuanzhouDQ. All rights reserved.
+//
+
+#ifndef DQPrefixHeader_pch
+#define DQPrefixHeader_pch
+#import "Masonry.h"
+/** 16进制转RGB*/
+#define HEX_COLOR(x_RGB) [UIColor colorWithRed:((float)((x_RGB & 0xFF0000) >> 16))/255.0 green:((float)((x_RGB & 0xFF00) >> 8))/255.0 blue:((float)(x_RGB & 0xFF))/255.0 alpha:1.0f]
+/** 屏幕宽度*/
+#define nc_ScreenHeight  [UIScreen mainScreen].bounds.size.height
+/** 屏幕高度*/
+#define nc_ScreenWidth  [UIScreen mainScreen].bounds.size.width
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+#endif /* DQPrefixHeader_pch */
